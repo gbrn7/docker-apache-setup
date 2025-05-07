@@ -3,7 +3,7 @@ services:
   webserver:
     container_name: webserver
     build:
-      context: .
+      context: ./apache
       dockerfile: Dockerfile
     restart: always
     depends_on:
