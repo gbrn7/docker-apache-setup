@@ -18,4 +18,3 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 RUN apt-get -y install certbot python3-certbot-apache
 
 COPY apache.conf /usr/local/apache2/conf/httpd.conf
-COPY . ../html/ /usr/local/apache2/htdocs/
